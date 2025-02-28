@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_navigation_home_to_navigation_bath"
             app:destination="@id/navigation_bath" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_room"
+            app:destination="@id/navigation_room" />
     </fragment>
 
     <fragment
@@ -33,4 +36,9 @@
         android:name="com.example.yourapp.ui.FragmentBath"
         android:label="Bath Booking"
         tools:layout="@layout/fragment_bath" />
+    <fragment
+        android:id="@+id/navigation_room"
+        android:name="com.example.yourapp.ui.RoomFragment"
+        android:label="Room Booking"
+        tools:layout="@layout/fragment_room" />
 </navigation>

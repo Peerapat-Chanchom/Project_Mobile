@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_cleaning_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How often do you need cleaning?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_once"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Just Once"
+        app:layout_constraintTop_toBottomOf="@id/tv_cleaning_frequency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_multi"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_multi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Multi Dates"
+        app:layout_constraintTop_toBottomOf="@id/tv_cleaning_frequency"
+        app:layout_constraintStart_toEndOf="@id/btn_once"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where will the service take place?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btn_once"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinner_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/location_options"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_location"/>
+
+    <TextView
+        android:id="@+id/tv_room_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select size of your room"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/spinner_location"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinner_room_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/room_sizes"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_room_size"/>
+
+    <TextView
+        android:id="@+id/tv_booking_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a booking type"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/spinner_room_size"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_booking_type">
+
+        <RadioButton
+            android:id="@+id/radio_booking_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking with selecting date-time instantly"/>
+
+        <RadioButton
+            android:id="@+id/radio_booking_later"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking with selecting date-time later"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_service_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When do you need this service?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup_booking"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_time">
+
+        <Button
+            android:id="@+id/btn_select_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_select_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost: ฿00.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btn_select_time"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        app:layout_constraintTop_toBottomOf="@id/tv_cost"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

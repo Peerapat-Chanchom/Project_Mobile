@@ -26,10 +26,17 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        // ✅ ตรวจสอบว่า findNavController() ทำงานปกติ
+        //  ตรวจสอบว่า findNavController() ทำงานปกติ
         binding.imgGoToBath.setOnClickListener {
             try {
                 findNavController().navigate(R.id.action_navigation_home_to_navigation_bath)
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+        binding.imgGoToRoom.setOnClickListener {
+            try {
+                findNavController().navigate(R.id.action_navigation_home_to_navigation_room)
             } catch (e: Exception) {
                 e.printStackTrace()
             }

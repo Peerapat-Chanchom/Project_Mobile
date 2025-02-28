@@ -35,7 +35,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please select size of your bathroom"
+        android:text="Please select size of your room"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -154,7 +154,7 @@
         android:id="@+id/tv_cost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cost: ฿350.00"
+        android:text="Cost: ฿00.00"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

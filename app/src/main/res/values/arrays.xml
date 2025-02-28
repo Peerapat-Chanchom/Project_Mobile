@@ -11,4 +11,9 @@
         <item>2 Bathrooms (20-30 sq.m.)</item>
         <item>3 Bathrooms (30-40 sq.m.)</item>
     </string-array>
+    <string-array name="room_sizes" >
+    <item>1 Bathroom (15-20 sq.m.)</item>
+    <item>2 Bathrooms (20-30 sq.m.)</item>
+    <item>3 Bathrooms (30-40 sq.m.)</item>
+</string-array>
 </resources>
