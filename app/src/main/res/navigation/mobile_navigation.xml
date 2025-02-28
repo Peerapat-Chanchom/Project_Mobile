@@ -8,8 +8,13 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.project_mobile.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_bath"
+            app:destination="@id/navigation_bath" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +27,10 @@
         android:name="com.example.project_mobile.ui.notifications.NotificationsFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_bath"
+        android:name="com.example.yourapp.ui.FragmentBath"
+        android:label="Bath Booking"
+        tools:layout="@layout/fragment_bath" />
 </navigation>
