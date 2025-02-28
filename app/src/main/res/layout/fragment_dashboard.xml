@@ -7,64 +7,31 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="77dp"
         android:padding="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"> <!-- เพิ่ม padding เพื่อให้มีพื้นที่ว่างรอบกรอบ -->
-
-        <!-- กรอบด้านบน -->
-
-        <!-- กรอบด้านล่าง -->
+        app:layout_constraintVertical_bias="0.36"> <!-- เพิ่ม padding เพื่อให้มีพื้นที่ว่างรอบกรอบ -->
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="4dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="325dp"
-            android:background="#FF0000" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
             android:layout_alignParentBottom="true"
+            android:layout_marginTop="725dp"
+            android:layout_marginBottom="72dp"
             android:background="#FF0000" />
 
-        <!-- กรอบด้านซ้าย -->
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:background="#FF0000" />
-
-        <!-- กรอบด้านขวา -->
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:background="#FF0000" />
-
-        <!-- View หลัก -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="ข้อความในกรอบ" />
-    </RelativeLayout>
+            android:text="นางสาวปาลิตา คงพันธุ์" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="436dp"
-        android:layout_height="384dp"
-        android:src="@drawable/p4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
