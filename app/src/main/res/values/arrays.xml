@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="location_options">
-        <item>Bangkok and vicinity</item>
-        <item>Chiang Mai</item>
-        <item>Phuket</item>
+        <item>Pattaya</item>
+        <item>Si Racha</item>
+        <item>Mueang Chonburi</item>
     </string-array>
 
     <string-array name="bathroom_sizes">
@@ -12,8 +12,8 @@
         <item>3 Bathrooms (30-40 sq.m.)</item>
     </string-array>
     <string-array name="room_sizes" >
-    <item>1 Bathroom (15-20 sq.m.)</item>
-    <item>2 Bathrooms (20-30 sq.m.)</item>
-    <item>3 Bathrooms (30-40 sq.m.)</item>
+    <item>1 room (15-20 sq.m.)</item>
+    <item>2 rooms (20-30 sq.m.)</item>
+    <item>3 rooms (30-40 sq.m.)</item>
 </string-array>
 </resources>

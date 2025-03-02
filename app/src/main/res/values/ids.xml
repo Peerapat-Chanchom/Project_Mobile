@@ -3,4 +3,5 @@
     <item name="tv_booking_type" type="id" />
     <item name="tv_when_service" type="id" />
     <item name="tv_title" type="id" />
+    <item name="tvOR" type="id" />
 </resources>
