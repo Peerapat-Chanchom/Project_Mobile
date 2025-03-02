@@ -22,7 +22,7 @@
         android:id="@+id/view8"
         android:layout_width="415dp"
         android:layout_height="500dp"
-        android:background="#F1E5E7"
+        android:background="#93BBCC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -63,6 +63,8 @@
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/imageView4"
         app:layout_constraintTop_toTopOf="@id/view5"
         app:layout_constraintVertical_bias="0.333" />
@@ -129,6 +131,7 @@
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toTopOf="@+id/view7"
         app:layout_constraintVertical_bias="0.266" />
+
     <TextView
         android:id="@+id/textView17"
         android:layout_width="331dp"
