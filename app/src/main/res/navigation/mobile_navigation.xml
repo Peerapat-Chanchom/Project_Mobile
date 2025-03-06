@@ -3,23 +3,73 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_login">
 
+    <!-- Login Fragment (หน้าแรกเมื่อเปิดแอป) -->
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.yourapp.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_login"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_navigation_login_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <!-- Home Fragment -->
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.project_mobile.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_bath"
+            app:destination="@id/navigation_bath" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_room"
+            app:destination="@id/navigation_room" />
+    </fragment>
 
+    <!-- Dashboard Fragment -->
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.project_mobile.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
+    <!-- Profile Fragment -->
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.project_mobile.ui.notifications.NotificationsFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_notifications" />
+
+    <!-- Bath Booking Fragment -->
+    <fragment
+        android:id="@+id/navigation_bath"
+        android:name="com.example.yourapp.ui.FragmentBath"
+        android:label="Bath Booking"
+        tools:layout="@layout/fragment_bath" />
+
+    <!-- Room Booking Fragment -->
+    <fragment
+        android:id="@+id/navigation_room"
+        android:name="com.example.yourapp.ui.RoomFragment"
+        android:label="Room Booking"
+        tools:layout="@layout/fragment_room" />
+
+    <!-- Sign Up Fragment -->
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.yourapp.ui.signup.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup" />
+    <action
+        android:id="@+id/action_navigation_signup_to_Login"
+        app:destination="@id/navigation_login" />
 </navigation>
